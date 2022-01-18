@@ -1,0 +1,14 @@
+<%- include("header"); %>
+
+<h1>Delete</h1>
+
+<form action="/delete" method="post" >
+  <div class="form-group">
+  <label>Blog ID</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" style="width: 402%" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="postId">
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary" name="blogDelete">Delete Blog</button>
+</form>
+<%- include("footer"); %>

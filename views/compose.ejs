@@ -1,0 +1,18 @@
+<%- include("header"); %>
+
+<h1>Compose</h1>
+
+<form action="/compose" method="post" >
+  <div class="form-group">
+  <label>Title</label>
+    <div class="input-group mb-3">
+      <input type="text" class="form-control" style="width: 402%" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" name="postTitle">
+    </div>
+  <label>Post</label>
+    <div class="input-group">
+    <textarea class="form-control" rows="5" cols="105" aria-label="With textarea" name="postBody"></textarea>
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary" name="blogSubmit">Publish</button>
+</form>
+<%- include("footer"); %>
